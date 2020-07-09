@@ -39,9 +39,7 @@ func get_volume(bus_name: String) -> int:
 
 
 func play_sound(sound: AudioStream) -> void:
-	print(sound)
 	var current_player
-	print(fx_player.instances)
 	for player in fx_player.instances:
 		if ! player.playing:
 			current_player = player
